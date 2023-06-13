@@ -1,15 +1,101 @@
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  
-    padding: 50px;
-    font-size: 20px;
+body{
+  padding: 0;
+  margin: 0;
+}
+#container1{
+  background-image: url(background1.png);
+  background-size: cover;
+ background-repeat: no-repeat;
+ border-image-slice: 30%;
+  height: 100vh;
+  width: 100vw;
+font-size: 300px;
+  color: white;
+  border-image-slice: 10;
+  padding-top: 200px;
+ text-align: center;
+ background-attachment: fixed;
+}
+#section{
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  color: aliceblue;
+  text-align: center;
+}
+#container2{
+  background-image: url(back1.jpg);
+  background-size: cover;
+ background-repeat: no-repeat;
+ border-image-slice: 30%;
+  height: 100vh;
+  width: 100vw;
+font-size: 300px;
 
+  border-image-slice: 10;
+  padding-top: 200px;
+  background-attachment: fixed;
+ text-align: center;
+ animation: animate 3s infinite;
+}
+#container3{
+  background-image: url(background3.png);
+  background-size: cover;
+ background-repeat: no-repeat;
+ border-image-slice: 30%;
+  height: 100vh;
+  width: 100vw;
+font-size: 200px;
+color: purple;
+  border-image-slice: 10;
+  padding-top: 100px;
+  background-attachment: fixed;
+ text-align: center;
+}
+#header{
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  color: aliceblue;
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  position: absolute;
+}
+li:hover{
+  cursor: pointer;
+  color: yellow;
+}
+button{
+  background-color: aliceblue;
+  border: solid 3px black;
+  width: 100px;
+  height: 50px;
+ margin-left: 1450px;
+ margin-top: 10px;
+ border-radius: 10px;
+}
+button:hover{
+  background-color: black;
+  border: solid 3px aliceblue;
+  width: 100px;
+  height: 50px;
+ margin-left: 1450px;
+ margin-top: 10px;
+ border-radius: 10px;
+ color: aliceblue;
+}
+@keyframes animate {
+  0%{
+      background-image: url(back1.jpg);
   }
-  ul{
-list-style: none;
-display: flex;
-gap: 1.5rem;
-
+  50%{
+      background-image: url(back2.jpg);
+  }
+  75%{
+      background-image: url(back3.jpg);
+  }
 }
